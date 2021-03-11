@@ -8,7 +8,13 @@
  */
 
 function multiplyArray(arr, n) {
-    // code here
-}
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof(arr[i]) === "number") {
+            arr[i] *= n;
+        }
 
+    }
+    return arr;
+}
+console.log(multiplyArray([1, 2, 3, 'ddd', { min: 1 }, 22, false], 2));
 module.exports = multiplyArray;
