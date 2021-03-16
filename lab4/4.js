@@ -17,7 +17,15 @@
 */
 
 function get1DArray(arr) {
-    //code here
+    let arr_return = [];
+    arr.forEach(function(item, i, arr) {
+        if (Array.isArray(item)) {
+            arr_return = arr_return.concat(get1DArray(item));
+        } else {
+            arr_return.push(item);
+        }
+    });
+    return arr_return;
 }
 
 module.exports = get1DArray;
