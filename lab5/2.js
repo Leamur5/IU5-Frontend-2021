@@ -12,8 +12,23 @@
  * console.log(curry(add)(1)(2, 3)); //6
  * console.log(curry(add)(1, 2, 3)); //6
  */
+
+
+
 function curry(f) {
-    //code here
+    var num_of_args = f.length;
+
+    return function f1(...args) {
+        if (args.length >= num_of_args) {
+            return f(...args);
+        } else {
+            return function f2(...nextArgs) {
+                var newArgs = args.concat(nextArgs);
+                return f1(...newArgs);
+            }
+        }
+    }
 }
+
 
 module.exports = curry;
