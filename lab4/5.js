@@ -10,8 +10,23 @@
  */
 
 function checkBrackets(str) {
-    //code here
-
+    const open_brackets = ['(', '[', '<'];
+    const close_brackets = [')', ']', '>'];
+    let brackets = [];
+    str.split("").forEach(function(item, i, arr) {
+        if (open_brackets.includes(item)) {
+            brackets.push(item);
+        } else {
+            if (brackets.length > 0) {
+                last = brackets[brackets.length - 1];
+                if ((open_brackets.includes(last)) && (open_brackets.indexOf(last) === close_brackets.indexOf(item))) {
+                    brackets.pop();
+                }
+            }
+        }
+    });
+    //console.log(brackets.length === 0);
+    return brackets.length === 0;
 }
-
+//checkBrackets('[(<>)]');
 module.exports = checkBrackets;

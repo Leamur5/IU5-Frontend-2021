@@ -8,7 +8,23 @@
  */
 
 function rle(str) {
-    //code here
+    let i = 0;
+    let str_return = "";
+    while (i != str.length) {
+        let count = 1;
+        while ((i + 1 < str.length) && (str[i] === str[i + 1])) {
+            count++;
+            i++;
+        }
+        if (count === 1) {
+            str_return = str_return.concat(str[i]);
+        } else {
+            str_return = str_return.concat(str[i], count);
+        }
+        i++;
+    }
+    //console.log(str_return);
+    return str_return;
 }
-
+rle('');
 module.exports = rle;
