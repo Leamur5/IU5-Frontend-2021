@@ -22,7 +22,29 @@
  */
 
 function makeRoute(arr) {
-    //code here
+    for (let i = 0; i < arr.length; i++) {
+        let first_elem = true;
+        arr.forEach(function(item, j, arr) {
+            if (arr[i].from === item.to) { first_elem = false; }
+        });
+        if (first_elem) {
+            let b = arr[i];
+            arr[i] = arr[0];
+            arr[0] = b;
+        }
+    }
+    for (let i = 0; i < arr.length; i++) {
+        arr.forEach(function(item, j, arr) {
+            if (item.from === arr[i].to) {
+                let b = arr[i + 1];
+                arr[i + 1] = arr[j];
+                arr[j] = b;
+                return;
+            }
+        });
+
+    }
+    return arr;
 }
 
 module.exports = makeRoute;
