@@ -9,7 +9,7 @@
 
 function customBind(f, context) {
     var num_of_args = f.length;
-    return function f1(...args) {
+    return function get_args(...args) {
         return f.call(context, ...args);
     }
 }
