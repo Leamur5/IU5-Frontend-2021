@@ -7,6 +7,7 @@ square.addEventListener("click", () => {
 
 });
 
+
 const timer = document.getElementById("timer");
 let count_time = 0;
 let timerId;
