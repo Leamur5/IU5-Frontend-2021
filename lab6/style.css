@@ -1,0 +1,129 @@
+ .holder {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+ 
+ #random-color-square {
+     width: 100px;
+     height: 100px;
+     background: rgb(29, 77, 83);
+     margin-top: 3rem;
+ }
+ 
+ #timer {
+     content: "0";
+     width: 200px;
+     height: 100px;
+     background: rgb(74, 190, 207);
+     -moz-border-radius: 100px / 50px;
+     -webkit-border-radius: 100px / 50px;
+     border-radius: 100px / 50px;
+     text-align: center;
+     font-size: 4.5rem;
+     margin-top: 3rem;
+ }
+ 
+ .dropdown-menu {
+     width: 40%;
+     padding-right: 0.3em;
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+     margin-top: 2em;
+     border-radius: 5px;
+     max-height: 0;
+     overflow: hidden;
+     transition: 1s;
+ }
+ 
+ .dropdown-menu-visible {
+     overflow: auto;
+     max-height: 200px;
+ }
+ 
+ .dropdown-item {
+     width: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem 1rem;
+     margin: 0.2rem 0;
+     border: #000 1px solid;
+     border-radius: 4px;
+     background: rgba(221, 253, 249, 0.068);
+     color: rgb(18, 42, 63);
+     text-decoration: none;
+     padding-left: 40px;
+     font-size: 18px;
+     border-color: rgb(71, 107, 136);
+     font-size: 1.5rem;
+ }
+ 
+ .btn {
+     color: rgb(12, 62, 105);
+     background: border-box;
+     border-color: rgb(137, 149, 160);
+     padding: 10px 35px;
+     display: inline-block;
+     font-size: 1.3rem;
+     border-width: 1px;
+ }
+ 
+ .dropdown {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 3rem;
+     width: 90%;
+ }
+ 
+ .head-link {
+     color: aliceblue;
+     text-decoration: none;
+     padding-left: 40px;
+     font-size: 18px;
+ }
+ 
+ a:hover {
+     color: rgb(115, 187, 187);
+ }
+ 
+ .pakman {
+     width: 0;
+     height: 0;
+     border-right: 60px solid transparent;
+     border-top: 60px solid #F4B915;
+     border-left: 60px solid #F4B915;
+     border-bottom: 60px solid #F4B915;
+     border-top-left-radius: 60px;
+     border-top-right-radius: 60px;
+     border-bottom-left-radius: 60px;
+     border-bottom-right-radius: 60px;
+     position: absolute;
+ }
+ 
+ .move-pakman {
+     width: 80%;
+     height: 500px;
+     border-color: rgb(35, 35, 80);
+     border: rgb(29, 77, 83) solid 4px;
+     position: relative;
+     padding: 5px;
+ }
+ 
+ .episode {
+     width: 300px;
+     border: black solid 1px;
+     margin: 10px;
+     padding: 15px;
+     font-size: 20px;
+     border-radius: 10px;
+ }
+ 
+ .breaking-bad-series {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }

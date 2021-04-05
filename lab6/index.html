@@ -5,11 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="holder">
+        <div id="random-color-square"></div>
+        <div id="timer">0</div>
+        <div class="dropdown">
+            <button class="btn" type="submit">
+            Some films</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.kinopoisk.ru/film/535341/">Intouchables</a></li>
+                <li><a class="dropdown-item" href="https://www.kinopoisk.ru/film/326/">The Shawshank Redemption</a></li>
+                <li><a class="dropdown-item" href="https://www.kinopoisk.ru/film/447301/">Inception</a></li>
+                <li><a class="dropdown-item" href="https://www.kinopoisk.ru/film/258687/">Interstellar</a></li>
+                <li><a class="dropdown-item" href="https://www.kinopoisk.ru/film/435/">The Green Mile</a></li>
+                <li><a class="dropdown-item" href="https://www.kinopoisk.ru/film/462682/">The Wolf of Wall Street</a></li>
+                <li><a class="dropdown-item" href="https://www.kinopoisk.ru/film/1143242/">The Gentlemen</a></li>
+                <li><a class="dropdown-item" href="https://www.kinopoisk.ru/film/361/">Fight Club</a></li>
+            </ul>
+        </div>
+
+        <div class="move-pakman">
+            <div class="pakman"></div>
+        </div>
+        <div class="dropdown">
+            <button class="btn" id="breaking-bad-btn">Episode list</button>
+            <div class="breaking-bad-series"></div>
+        </div>
+    </div>
 
 </body>
+<script src="./script.js"></script>
+
+
 
 </html>
