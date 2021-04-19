@@ -1,0 +1,40 @@
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: .5rem;
+}
+
+input {
+    margin-right: 1rem;
+}
+
+.todoItemButton {
+    background: rgb(167, 95, 201);
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.editTodo {
+    border: none;
+    margin: 5px;
+    background: none;
+    font-size: 15px;
+}
+
+.editTodo:focus,
+.editTodo:hover {
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    background: #d487d42f;
+}

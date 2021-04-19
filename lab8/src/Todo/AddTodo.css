@@ -1,0 +1,10 @@
+.addTodoButton {
+    background: rgb(120, 88, 170);
+    border-radius: 1rem;
+    color: #ffffff;
+    border: none;
+}
+
+.addTodoForm {
+    margin-bottom: 1rem;
+}
