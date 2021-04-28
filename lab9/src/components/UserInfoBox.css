@@ -1,0 +1,59 @@
+.user-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    width: 110%;
+    box-shadow: 0px 0px 10px 30px rgba(151, 56, 123, 0.445);
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: block;
+    border-radius: 50%;
+    margin-top: 3rem;
+}
+
+.login {
+    font-size: 3rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.5rem;
+}
+
+.name {
+    font-size: 2rem;
+    margin-top: 0.1rem;
+}
+
+.followers {
+    font-size: 1rem;
+}
+
+.user-link {
+    font-size: 1rem;
+    border-bottom: 1px dashed;
+    text-decoration: none;
+    color: rgb(103, 30, 117);
+}
+
+.user-link:visited {
+    color: #3ead83;
+}
+
+.user-link:hover {
+    color: #6aaab6;
+    border-bottom: .07em solid;
+}
+
+.user-link:active {
+    color: #7ae7eb;
+    border-bottom: 1px dashed;
+}
+
+#blog-info {
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
