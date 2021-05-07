@@ -20,7 +20,7 @@ const UserInfo: React.FC<IUserInfoProps> = ({ username }) => {
 
   const history = useHistory();
     const backClick = () => {
-        history.push(process.env.REACT_APP_DEV === "true" ? "/" : "/lab9/build/");
+        history.push(process.env.REACT_APP_DEV === "true" ? "/" : "/lab10/build/");
     };
   useEffect(() => {
   if (username.trim().length) {

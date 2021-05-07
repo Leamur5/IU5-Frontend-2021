@@ -17,7 +17,7 @@ const UserSearch: React.FC<IUserSearchProps> = ({ onSearch }) => {
     if (value.trim().length !== 0) {
       onSearch(value);
       setValue("");
-      history.push(process.env.REACT_APP_DEV === "true" ? "/UserInfo" : "/lab9/build/UserInfo");
+      history.push(process.env.REACT_APP_DEV === "true" ? "/UserInfo" : "/lab10/build/UserInfo");
     }
   };
 

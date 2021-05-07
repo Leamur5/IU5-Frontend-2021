@@ -14,10 +14,10 @@ function App() {
     <div className = "App" >
        
       <Switch>
-        <Route exact path={process.env.REACT_APP_DEV === "true" ? "/" : "/lab9/build/"}>
+        <Route exact path={process.env.REACT_APP_DEV === "true" ? "/" : "/lab10/build/"}>
           <UserSearch onSearch={(username) => setUser(username)} />
         </Route>
-        <Route path={process.env.REACT_APP_DEV === "true" ? "/UserInfo" : "/lab9/build/UserInfo"}>
+        <Route path={process.env.REACT_APP_DEV === "true" ? "/UserInfo" : "/lab10/build/UserInfo"}>
           <UserInfo username={user} / >
         </Route>
                 

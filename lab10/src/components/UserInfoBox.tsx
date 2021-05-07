@@ -7,7 +7,7 @@ const UserInfoBox: React.FC = () => {
     const { info } = useAppSelector((state) => state.user);
     const history = useHistory();
     const backClick = () => {
-        history.push(process.env.REACT_APP_DEV === "true" ? "/" : "/lab9/build/");
+        history.push(process.env.REACT_APP_DEV === "true" ? "/" : "/lab10/build/");
     };
     return(
     
